@@ -40,19 +40,19 @@ export class NightWing extends LitElement {
     return html`
      <div id="main">
 
-    <h1>${this.title}</h1> 
-    <p>${this.paragraph1}</p>
+      <h1>${this.title}</h1> 
+      <p>${this.paragraph1}</p>
           
-    <h1>${this.title2}</h1> 
-    <p>${this.paragraph2}</p>
+      <h1>${this.title2}</h1> 
+      <p>${this.paragraph2}</p>
 
-    <h1>${this.title3}</h1> 
-    <p>${this.paragraph3}</p>
+      <h1>${this.title3}</h1> 
+      <p>${this.paragraph3}</p>
           
       <div class="dc-img-container">
         <img class="personaje-img" src="${this.imageURL}">
       </div> 
-
+     </div>
     `
   }
 
