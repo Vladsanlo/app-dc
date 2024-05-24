@@ -2,6 +2,7 @@ import { LitElement, css, html } from 'lit'
 import './batman-element.js'
 import './red-hood.js'
 import './night-wing.js'
+import'./bat-girl.js'
 
 export class MyElement extends LitElement {
   static get properties() {
@@ -21,7 +22,7 @@ export class MyElement extends LitElement {
 
   setPrevious(e) {
     if (this.position === 0) {
-      this.position = 2
+      this.position = 3
     }
     else {
       this.position--
@@ -29,7 +30,7 @@ export class MyElement extends LitElement {
   }
 
   setNext(e) {
-    if (this.position == 2) {
+    if (this.position == 3) {
       this.position = 0
     }
     else {
@@ -47,7 +48,7 @@ export class MyElement extends LitElement {
       ${this.position===0 ? html `<batman-element></batman-element>` : ''}
       ${this.position===1 ? html `<red-hood></red-hood>` : ''}
       ${this.position===2 ? html `<night-wing></night-wing>`:''}
-      
+      ${this.position===3 ? html `<bat-girl></bat-girl>`:''}
     </div>
 
 
