@@ -2,7 +2,7 @@ import { LitElement, css, html } from 'lit'
 import './batman-element.js'
 import './red-hood.js'
 import './night-wing.js'
-import'./bat-girl.js'
+import './bat-girl.js'
 
 export class MyElement extends LitElement {
   static get properties() {
@@ -45,10 +45,10 @@ export class MyElement extends LitElement {
       <button @click="${this.setPrevious}">Anterior</button>
       <button @click="${this.setNext}">Siguiente</button>
       <h1>${this.position}</h1>
-      ${this.position===0 ? html `<batman-element></batman-element>` : ''}
-      ${this.position===1 ? html `<red-hood></red-hood>` : ''}
-      ${this.position===2 ? html `<night-wing></night-wing>`:''}
-      ${this.position===3 ? html `<bat-girl></bat-girl>`:''}
+      ${this.position === 0 ? html`<batman-element></batman-element>` : ''}
+      ${this.position === 1 ? html`<red-hood></red-hood>` : ''}
+      ${this.position === 2 ? html`<night-wing></night-wing>` : ''}
+      ${this.position === 3 ? html`<bat-girl></bat-girl>` : ''}
     </div>
 
 
