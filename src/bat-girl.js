@@ -5,7 +5,7 @@ export class BatGirl extends LitElement {
     return {
 
       title: { type: String },
-      paragraph: { type: String, },
+      paragraph: { type: String },
 
       title1: { type: String },
       paragraph1: { type: String },
@@ -29,7 +29,7 @@ export class BatGirl extends LitElement {
     this.title2 = 'Caracteristicas'
     this.paragraph2 = 'Una de las características más destacadas de Batgirl, especialmente en la representación de Barbara Gordon, es su inteligencia y habilidad para resolver problemas. Además de sus habilidades físicas, es una experta en tecnología y computación. También es conocida por su tenacidad y determinación para enfrentarse a los criminales más peligrosos de Gotham. A lo largo de los años, Batgirl ha evolucionado como personaje, enfrentando desafíos personales y profesionales. En una de las historias más influyentes, "The Killing Joke", Barbara Gordon fue brutalmente herida por el Joker, lo que la dejó paralítica. Después de este evento, adoptó la identidad de Oracle, convirtiéndose en una hacker y estratega experta que proporciona inteligencia y apoyo logístico a otros héroes. Posteriormente, en el cómic "The New 52", DC Comics reintrodujo a Barbara Gordon como Batgirl, utilizando una historia en la que recupera la movilidad de sus piernas gracias a una cirugía experimental. Esta versión de Batgirl es una mezcla de la ingeniosa detective de la Edad de Plata con la tenacidad y determinación de la Barbara Gordon post-"The Killing Joke".  '
 
-    imageURL = 'https://naldzgraphics.net/wp-content/uploads/2012/06/26-batgirl.jpg'
+    this.imageURL = 'https://naldzgraphics.net/wp-content/uploads/2012/06/26-batgirl.jpg'
 
   }
 
@@ -43,10 +43,14 @@ export class BatGirl extends LitElement {
      <h1>${this.title1}</h1>
      <p>${this.paragraph1}</p>
 
+     <h1>${this.title2}</h1>
+     <p>${this.paragraph2}</p>
+
      <div class="dc-img-container">
-      <img class="personaje-img" ${this.imageURL}>
+      <img class="personaje-img" src="${this.imageURL}">
      </div>
-   
+  </div>
+
    `
   }
 
@@ -55,11 +59,11 @@ export class BatGirl extends LitElement {
   static get styles() {
     return css`
     #main{
-      background-color:rgb(0, 29, 122)
+      background-color:#6c3e9f
     }
 
     #main{
-      color:rgb(105, 104, 103)
+      color:black
     }
       
     
